@@ -28,3 +28,15 @@ for word in words:
 modified_string = " ".join(modified_words)
 result = "Result: " + modified_string
 print(result)
+
+text = "Viking"
+print(text[:])
+print(text[2:3])
+print(text[4:5])
+print(text[:5])
+print(text[:4])
+print(text[::2])
+print(text[1::2])
+print(text[::-1])
+print(text[::-2])
+print(len(text))
