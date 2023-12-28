@@ -15,3 +15,16 @@ for i in numwords:
     if i == numdigits:
         num += 1
 print(f"Number {numdigits} occurs {num} times")
+string = input("Please enter your text:  ")
+search_word = input("Type in the word you want to find:  ")
+replace_word = input("Enter the word you want to replace the found word with:  ")
+words = string.split()
+modified_words = []
+for word in words:
+   if word == search_word:
+       modified_words.append(replace_word)
+   else:
+       modified_words.append(word)
+modified_string = " ".join(modified_words)
+result = "Result: " + modified_string
+print(result)
